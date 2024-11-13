@@ -55,11 +55,10 @@ elif st.session_state.user_type == 'Aluno': # registrar aluno
         'Foto': foto
     }
 
-    if st.button("Registrar Aluno"):
+    if st.button("Registrar Aluno(a)"):
         if ver_preenchidos(campos_aluno):
-            st.success("Escola registrada com sucesso!")
+            st.success("Aluno(a) registrada com sucesso!")
+            
 
         else:
             st.error("Por favor, preencha todos os campos.")
-
-
